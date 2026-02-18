@@ -224,6 +224,15 @@ body {
     font-size: 14px;
 }
 
+.footer a {
+    color: white; /* mesma cor do texto */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
@@ -441,4 +450,400 @@ body {
 
 .card-info p {
     margin: 5px 0;
+}
+
+/* ===== TÍTULO DA PÁGINA ===== */
+
+.titulo-pagina {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color: #0d1b2a;
+}
+
+.titulo-pagina::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #0d1b2a;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* ===== PÁGINA CONTATO ===== */
+
+.pagina-contato {
+    padding: 80px 20px;
+}
+
+.titulo-contato {
+    text-align: center;
+    font-size: 48px; /* maior que o de imóveis */
+    margin-bottom: 60px;
+    color: #0d1b2a;
+}
+
+.titulo-contato::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #0d1b2a;
+    margin: 15px auto 0;
+    border-radius: 3px;
+}
+
+/* LINHAS */
+
+.info-contato {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.linha-contato {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo-contato {
+    width: 50px;
+    height: 50px;
+    background-color: #0d1b2a; /* espaço para logo */
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.linha-contato p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ===== CONTATO ===== */
+
+.titulo-contato {
+    text-align: center;
+    font-size: 48px; /* maior que o de imóveis */
+    margin: 60px 0 40px;
+}
+
+/* ===== FORMULÁRIO DE CONTATO ===== */
+
+.contato-formulario {
+    width: 95%;           /* ocupa quase toda a tela */
+    max-width: 1000px;    /* limite maior */
+    margin: 80px auto;
+    padding: 50px;        /* um pouco mais de espaço interno */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.contato-formulario h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px; /* Título maior */
+}
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço automático entre campos */
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.campo input,
+.campo textarea {
+    padding: 14px; /* Campos maiores */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #0f172a;
+    outline: none;
+}
+
+.btn-enviar {
+    background-color: #0f172a;
+    color: white;
+    padding: 16px; /* Botão maior */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #1e293b;
+}
+
+
+/* ===== PÁGINA OBRIGADO ===== */
+
+.pagina-obrigado {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* TOPO */
+.topo-simples {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.topo-simples h1 {
+    margin: 0;
+}
+
+/* CONTEÚDO */
+.conteudo-obrigado {
+    flex: 1;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.conteudo-obrigado h2 {
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #0f172a;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #0f172a;
+}
+
+/* RODAPÉ */
+.footer-simples {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ===== BOTÃO WHATSAPP FIXO ===== */
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 65px;
+    height: 65px;
+    background-color: #1eae53;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-whatsapp img {
+    width: 35px;
+    height: 35px;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    .btn-whatsapp {
+        width: 55px;
+        height: 55px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .btn-whatsapp img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* ============================= */
+/*          PÁGINA SOBRE         */
+/* ============================= */
+
+.sobre {
+    margin-top: 60px;
+}
+
+.sobre-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.sobre-imagem {
+    flex: 1;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* ============================= */
+/*         RESPONSIVO            */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-texto h1 {
+        font-size: 32px;
+    }
+
+}
+
+.equipe {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.equipe h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards-equipe {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card-equipe {
+    width: 280px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card-equipe:hover {
+    transform: translateY(-5px);
+}
+
+.card-equipe img {
+    width: 100%;
+    border-radius: 10%;
+    margin-bottom: 15px;
+}
+
+.cargo {
+    font-weight: bold;
+    color: #0a1a33;
+    margin-bottom: 10px;
+}
+
+/* ===== BUSCA TOPO ===== */
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* INPUT ESCONDIDO */
+.search-container input {
+    width: 0;
+    opacity: 0;
+    padding: 8px 0;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.4s ease;
+}
+
+/* QUANDO ESTIVER ATIVO */
+.search-container input.active {
+    width: 200px;
+    opacity: 1;
+    padding: 8px 35px 8px 10px;
+}
+
+/* BOTÃO */
+.btn-search {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    position: absolute;
+    right: 5px;
+}
+
+.btn-search:hover {
+    color: #007bff;
+}
+
+
+@media (max-width: 768px) {
+    #searchInput.active {
+        width: 140px;
+    }
 }

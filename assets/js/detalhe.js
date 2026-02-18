@@ -26,8 +26,8 @@ const imoveis = {
             "../assets/img/apto3.jpg",
             "../assets/img/apto2.png",
             "../assets/img/apto4.jpg"
-            
-            
+
+
         ]
     },
 
@@ -41,7 +41,99 @@ const imoveis = {
         imagens: [
             "../assets/img/terreno1.jpg"
         ]
+    },
+
+    casapraia: {
+        titulo: "Casa na Praia",
+        preco: "R$ 980.000",
+        quartos: "4",
+        banheiros: "3",
+        vagas: "2",
+        descricao: "Casa incrível na praia com piscina e vista para o mar.",
+        imagens: [
+            "../assets/img/praia1.jpg",
+            "../assets/img/praia2.jpg",
+            "../assets/img/praia3.jpg",
+            "../assets/img/praia4.jpg",
+            "../assets/img/praia5.jpg"
+        ]
+    },
+
+    aptocentro: {
+        titulo: "Apartamento no Centro",
+        preco: "R$ 450.000",
+        quartos: "2",
+        banheiros: "1",
+        vagas: "1",
+        descricao: "Apartamento localizado no centro da cidade, próximo a tudo.",
+        imagens: [
+            "../assets/img/aptocentro1.jpg",
+            "../assets/img/aptocentro2.jpg",
+            "../assets/img/aptocentro3.jpg"
+        ]
+    },
+
+    sitio: {
+        titulo: "Sítio Aconchegante",
+        preco: "R$ 1.200.000",
+        quartos: "5",
+        banheiros: "3",
+        vagas: "4",
+        descricao: "Sítio com ampla área verde, piscina e espaço gourmet.",
+        imagens: [
+            "../assets/img/sitio1.jpg",
+            "../assets/img/sitio2.jpg",
+            "../assets/img/sitio3.jpg",
+            "../assets/img/sitio4.jpg",
+            "../assets/img/sitio5.jpg",
+            "../assets/img/sitio6.jpg"
+        ]
+    },
+
+    cobertura: {
+        titulo: "Cobertura de Luxo",
+        preco: "R$ 1.500.000",
+        quartos: "3",
+        banheiros: "3",
+        vagas: "2",
+        descricao: "Cobertura com vista panorâmica e área gourmet exclusiva.",
+        imagens: [
+            "../assets/img/cobertura1.jpg",
+            "../assets/img/cobertura2.jpg",
+            "../assets/img/cobertura3.jpg"
+        ]
+    },
+
+    chacara: {
+        titulo: "Chácara com Lago",
+        preco: "R$ 850.000",
+        quartos: "4",
+        banheiros: "2",
+        vagas: "3",
+        descricao: "Chácara com lago natural e grande área verde.",
+        imagens: [
+            "../assets/img/chacara1.jpeg",
+            "../assets/img/chacara2.jpg",
+            "../assets/img/chacara3.jpg",
+            "../assets/img/chacara4.jpg",
+            "../assets/img/chacara5.jpg",
+            "../assets/img/chacara6.jpg"
+        ]
+    },
+
+    kitnet: {
+        titulo: "Kitnet Compacta",
+        preco: "R$ 220.000",
+        quartos: "1",
+        banheiros: "1",
+        vagas: "0",
+        descricao: "Ideal para estudantes ou investimento.",
+        imagens: [
+            "../assets/img/kitnet1.jpg",
+            "../assets/img/kitnet2.jpg"
+        ]
     }
+
 };
 
 // PEGA O ID DA URL

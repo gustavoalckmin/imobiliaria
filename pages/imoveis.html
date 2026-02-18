@@ -17,153 +17,195 @@
 
         <nav class="menu">
             <ul>
+                <!-- BUSCA -->
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Buscar imóvel...">
+                    <button id="searchBtn">🔍</button>
+                </div>
+
                 <li><a href="../index.html">Início</a></li>
-                <li><a href="../index.html">Imóveis</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#">Imóveis</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    
+
 
     <section class="lista-imoveis">
         <div class="container">
+
+            <h1 class="titulo-pagina">Imóveis</h1>
+
             <div id="lista">
 
-               <div id="lista">
 
-    <!-- CARD 1 -->
-    <div class="card">
-        <img src="../assets/img/casa1.jpg" alt="Casa moderna">
-        <div class="card-info">
-            <h3>Casa Moderna</h3>
-            <p>3 quartos • 2 banheiros • 2 vagas</p>
-            <span class="preco">R$ 750.000</span>
-            <a href="detalhe.html?id=casa" class="botao-card">Ver Detalhes</a>
-        </div>
-    </div>
+                <!-- CARD 1 -->
+                <div class="card">
+                    <img src="../assets/img/casa1.jpg" alt="Casa moderna">
+                    <div class="card-info">
+                        <h3>Casa Moderna</h3>
+                        <p>3 quartos • 2 banheiros • 2 vagas</p>
+                        <span class="preco">R$ 750.000</span>
+                        <a href="detalhe.html?id=casa" class="botao-card">Ver Detalhes</a>
+                    </div>
+                </div>
 
-    <!-- CARD 2 -->
-    <div class="card">
-        <img src="../assets/img/apto1.jpg" alt="Apartamento Luxo">
-        <div class="card-info">
-            <h3>Apartamento de Luxo</h3>
-            <p>2 quartos • 1 suíte • 1 vaga</p>
-            <span class="preco">R$ 520.000</span>
-            <a href="detalhe.html?id=apartamento" class="botao-card">Ver Detalhes</a>
-        </div>
-    </div>
+                <!-- CARD 2 -->
+                <div class="card">
+                    <img src="../assets/img/apto1.jpg" alt="Apartamento Luxo">
+                    <div class="card-info">
+                        <h3>Apartamento de Luxo</h3>
+                        <p>2 quartos • 1 suíte • 1 vaga</p>
+                        <span class="preco">R$ 520.000</span>
+                        <a href="detalhe.html?id=apartamento" class="botao-card">Ver Detalhes</a>
+                    </div>
+                </div>
 
-    <!-- CARD 3 -->
-    <div class="card">
-        <img src="../assets/img/terreno1.jpg" alt="Terreno amplo">
-        <div class="card-info">
-            <h3>Terreno Amplo</h3>
-            <p>500m² • Bairro nobre</p>
-            <span class="preco">R$ 300.000</span>
-            <a href="detalhe.html?id=terreno" class="botao-card">Ver Detalhes</a>
-        </div>
-    </div>
+                <!-- CARD 3 -->
+                <div class="card">
+                    <img src="../assets/img/terreno1.jpg" alt="Terreno amplo">
+                    <div class="card-info">
+                        <h3>Terreno Amplo</h3>
+                        <p>500m² • Bairro nobre</p>
+                        <span class="preco">R$ 300.000</span>
+                        <a href="detalhe.html?id=terreno" class="botao-card">Ver Detalhes</a>
+                    </div>
+                </div>
 
-    <!-- CARD 4 -->
-    <div class="card">
-        <img src="../assets/img/casa2.jpg" alt="Casa na Praia">
-        <div class="card-info">
-            <h3>Casa na Praia</h3>
-            <p>4 quartos • 3 banheiros • Piscina • 2 vagas</p>
-            <span class="preco">R$ 980.000</span>
-            <a href="detalhe.html?id=casapraia" class="botao-card">Ver Detalhes</a>
-        </div>
-    </div>
+                <!-- CARD 4 -->
+                <div class="card">
+                    <img src="../assets/img/praia1.jpg" alt="Casa na Praia">
+                    <div class="card-info">
+                        <h3>Casa na Praia</h3>
+                        <p>4 quartos • 3 banheiros • Piscina • 2 vagas</p>
+                        <span class="preco">R$ 980.000</span>
+                        <a href="detalhe.html?id=casapraia" class="botao-card">Ver Detalhes</a>
+                    </div>
+                </div>
 
-    <!-- CARD 5 -->
-    <div class="card">
-        <img src="../assets/img/aptocentro1.jpg" alt="Apartamento Centro">
-        <div class="card-info">
-            <h3>Apartamento no Centro</h3>
-            <p>2 quartos • 1 banheiro • 1 vaga</p>
-            <span class="preco">R$ 450.000</span>
-            <a href="detalhe.html?id=aptocentro" class="botao-card">Ver Detalhes</a>
-        </div>
-    </div>
+                <!-- CARD 5 -->
+                <div class="card">
+                    <img src="../assets/img/aptocentro1.jpg" alt="Apartamento Centro">
+                    <div class="card-info">
+                        <h3>Apartamento no Centro</h3>
+                        <p>2 quartos • 1 banheiro • 1 vaga</p>
+                        <span class="preco">R$ 450.000</span>
+                        <a href="detalhe.html?id=aptocentro" class="botao-card">Ver Detalhes</a>
+                    </div>
+                </div>
 
-    <!-- CARD 6 -->
-    <div class="card">
-        <img src="../assets/img/sitio1.jpg" alt="Sítio aconchegante">
-        <div class="card-info">
-            <h3>Sítio Aconchegante</h3>
-            <p>5 quartos • Área verde • Piscina</p>
-            <span class="preco">R$ 1.200.000</span>
-            <a href="detalhe.html?id=sitio" class="botao-card">Ver Detalhes</a>
-        </div>
-    </div>
+                <!-- CARD 6 -->
+                <div class="card">
+                    <img src="../assets/img/sitio1.jpg" alt="Sítio aconchegante">
+                    <div class="card-info">
+                        <h3>Sítio Aconchegante</h3>
+                        <p>5 quartos • Área verde • Piscina</p>
+                        <span class="preco">R$ 1.200.000</span>
+                        <a href="detalhe.html?id=sitio" class="botao-card">Ver Detalhes</a>
+                    </div>
+                </div>
 
-    <!-- CARD 7 -->
-    <div class="card">
-        <img src="../assets/img/cobertura1.jpg" alt="Cobertura Luxo">
-        <div class="card-info">
-            <h3>Cobertura de Luxo</h3>
-            <p>3 suítes • Vista panorâmica • 2 vagas</p>
-            <span class="preco">R$ 1.500.000</span>
-            <a href="detalhe.html?id=cobertura" class="botao-card">Ver Detalhes</a>
-        </div>
-    </div>
+                <!-- CARD 7 -->
+                <div class="card">
+                    <img src="../assets/img/cobertura1.jpg" alt="Cobertura Luxo">
+                    <div class="card-info">
+                        <h3>Cobertura de Luxo</h3>
+                        <p>3 suítes • Vista panorâmica • 2 vagas</p>
+                        <span class="preco">R$ 1.500.000</span>
+                        <a href="detalhe.html?id=cobertura" class="botao-card">Ver Detalhes</a>
+                    </div>
+                </div>
 
-    <!-- CARD 8 -->
-    <div class="card">
-        <img src="../assets/img/chacara1.jpg" alt="Chácara">
-        <div class="card-info">
-            <h3>Chácara com Lago</h3>
-            <p>Área ampla • Lago natural • Casa sede</p>
-            <span class="preco">R$ 850.000</span>
-            <a href="detalhe.html?id=chacara" class="botao-card">Ver Detalhes</a>
-        </div>
-    </div>
+                <!-- CARD 8 -->
+                <div class="card">
+                    <img src="../assets/img/chacara1.jpeg" alt="Chácara">
+                    <div class="card-info">
+                        <h3>Chácara com Lago</h3>
+                        <p>Área ampla • Lago natural • Casa sede</p>
+                        <span class="preco">R$ 850.000</span>
+                        <a href="detalhe.html?id=chacara" class="botao-card">Ver Detalhes</a>
+                    </div>
+                </div>
 
-    <!-- CARD 9 -->
-    <div class="card">
-        <img src="../assets/img/kitnet1.jpg" alt="Kitnet">
-        <div class="card-info">
-            <h3>Kitnet Compacta</h3>
-            <p>1 quarto • Ideal para estudantes</p>
-            <span class="preco">R$ 220.000</span>
-            <a href="detalhe.html?id=kitnet" class="botao-card">Ver Detalhes</a>
-        </div>
-    </div>
-
-</div>
+                <!-- CARD 9 -->
+                <div class="card">
+                    <img src="../assets/img/kitnet1.jpg" alt="Kitnet">
+                    <div class="card-info">
+                        <h3>Kitnet Compacta</h3>
+                        <p>1 quarto • Ideal para estudantes</p>
+                        <span class="preco">R$ 220.000</span>
+                        <a href="detalhe.html?id=kitnet" class="botao-card">Ver Detalhes</a>
+                    </div>
+                </div>
 
             </div>
+
+        </div>
         </div>
     </section>
 
     <script src="../assets/js/imoveis.js"></script>
 
     <!-- FOOTER FORA DO CONTAINER -->
-   <footer class="footer">
-    <div class="footer-container">
+    <footer class="footer">
+        <div class="footer-container">
 
-        <div class="footer-col">
-            <h3>Imobiliária Modelo</h3>
-            <p>CRECI 00000-J</p>
-            <p>Especialistas em imóveis de alto padrão.</p>
+            <div class="footer-col">
+                <h3>Imobiliária Modelo</h3>
+                <p>CRECI 00000-J</p>
+                <p>Especialistas em imóveis de alto padrão.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <p>
+                    <a href="https://maps.app.goo.gl/2kpEUFDa5Q3xYFg4A" target="_blank" rel="noopener noreferrer"
+                        class="link-mapa">
+                        📍 Rua Exemplo, 123 - Centro
+                    </a>
+                </p>
+                <p>📞 (11) 99999-9999</p>
+                <p>✉ contato@imobiliaria.com</p>
+            </div>
+
         </div>
 
-        <div class="footer-col">
-            <h4>Contato</h4>
-            <p>📍 Rua Exemplo, 123 - Centro</p>
-            <p>📞 (11) 99999-9999</p>
-            <p>✉ contato@imobiliaria.com</p>
+        <div class="footer-copy">
+            <p>© 2026 Imobiliária Modelo. Todos os direitos reservados.</p>
         </div>
+    </footer>
 
-    </div>
+    <a href="https://wa.me/5511999999999" class="btn-whatsapp" target="_blank">
 
-    <div class="footer-copy">
-        <p>© 2026 Imobiliária Modelo. Todos os direitos reservados.</p>
-    </div>
-</footer>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+    </a>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const termo = localStorage.getItem("busca");
+
+    if (termo) {
+        const cards = document.querySelectorAll(".card");
+
+        cards.forEach(card => {
+            const titulo = card.querySelector("h3").textContent.toLowerCase();
+
+            if (!titulo.includes(termo)) {
+                card.style.display = "none";
+            }
+        });
+
+        localStorage.removeItem("busca");
+    }
+
+});
+</script>
+
+<script src="../assets/js/search.js"></script>
 
 </body>
-</html>
 
+</html>
