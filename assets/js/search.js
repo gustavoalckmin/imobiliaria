@@ -1,32 +1,37 @@
-document.addEventListener("DOMContentLoaded", () => {
+const searchBtn = document.getElementById("searchBtn");
+const searchInput = document.getElementById("searchInput");
 
-    const searchBtn = document.getElementById("searchBtn");
-    const searchInput = document.getElementById("searchInput");
+// Função para executar a pesquisa
+function executarPesquisa() {
+    const termo = searchInput.value.trim();
+    if (termo !== "") {
+        let caminho = "";
 
-    if (!searchBtn || !searchInput) return;
-
-    searchBtn.addEventListener("click", () => {
-
-        // Se ainda não estiver aberto → abre
-        if (!searchInput.classList.contains("active")) {
-            searchInput.classList.add("active");
-            searchInput.focus();
-            return;
-        }
-
-        // Se já estiver aberto
-        const termo = searchInput.value.trim().toLowerCase();
-
-        // Se tiver texto → pesquisar
-        if (termo !== "") {
-            localStorage.setItem("busca", termo);
-            window.location.href = "/pages/imoveis.html";
+        // Detecta se estamos dentro da pasta 'pages'
+        if (window.location.pathname.includes("/pages/")) {
+            caminho = "imoveis.html";
         } else {
-            // Se estiver vazio → fechar
-            searchInput.classList.remove("active");
+            caminho = "pages/imoveis.html";
         }
 
-    });
+        window.location.href = caminho + "?busca=" + encodeURIComponent(termo);
+    }
+}
 
+// Clique no botão
+searchBtn.addEventListener("click", function () {
+    searchInput.classList.toggle("active");
+
+    if (searchInput.classList.contains("active")) {
+        searchInput.focus();
+    } else {
+        executarPesquisa();
+    }
 });
 
+// Pressionar Enter
+searchInput.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+        executarPesquisa();
+    }
+});

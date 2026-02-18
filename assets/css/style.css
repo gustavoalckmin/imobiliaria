@@ -30,8 +30,8 @@ body {
     align-items: center;
     padding: 20px 60px;
     background-color: #0f172a;
-    /* azul escuro moderno */
 }
+
 
 .logo {
     color: white;
@@ -42,10 +42,12 @@ body {
 .menu ul {
     list-style: none;
     display: flex;
+    align-items: center; /* ADICIONE ISSO */
     gap: 30px;
     margin: 0;
     padding: 0;
 }
+
 
 .menu a {
     text-decoration: none;
@@ -826,24 +828,55 @@ body {
     padding: 8px 35px 8px 10px;
 }
 
-/* BOTÃO */
-.btn-search {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    color: #555;
-    position: absolute;
-    right: 5px;
-}
 
-.btn-search:hover {
-    color: #007bff;
-}
 
 
 @media (max-width: 768px) {
     #searchInput.active {
         width: 140px;
     }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* ALINHA TUDO NA MESMA ALTURA */
+    padding: 15px 50px;
+    background-color: #0b1b33;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; /* GARANTE alinhamento vertical */
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.btn-search {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    position: static;
+}
+
+.btn-search:hover {
+    color: #ffffff;
 }

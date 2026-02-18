@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Imóveis</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -20,11 +22,14 @@
                 <!-- BUSCA -->
                 <div class="search-container">
                     <input type="text" id="searchInput" placeholder="Buscar imóvel...">
-                    <button id="searchBtn">🔍</button>
+                     <button id="searchBtn" class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
                 </div>
 
                 <li><a href="../index.html">Início</a></li>
-                <li><a href="#">Imóveis</a></li>
+                <li><a href="imoveis.html">Imóveis</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
@@ -183,28 +188,28 @@
     </a>
 
     <script>
-document.addEventListener("DOMContentLoaded", () => {
+        document.addEventListener("DOMContentLoaded", () => {
 
-    const termo = localStorage.getItem("busca");
+            const termo = localStorage.getItem("busca");
 
-    if (termo) {
-        const cards = document.querySelectorAll(".card");
+            if (termo) {
+                const cards = document.querySelectorAll(".card");
 
-        cards.forEach(card => {
-            const titulo = card.querySelector("h3").textContent.toLowerCase();
+                cards.forEach(card => {
+                    const titulo = card.querySelector("h3").textContent.toLowerCase();
 
-            if (!titulo.includes(termo)) {
-                card.style.display = "none";
+                    if (!titulo.includes(termo)) {
+                        card.style.display = "none";
+                    }
+                });
+
+                localStorage.removeItem("busca");
             }
+
         });
+    </script>
 
-        localStorage.removeItem("busca");
-    }
-
-});
-</script>
-
-<script src="../assets/js/search.js"></script>
+    <script src="../assets/js/search.js"></script>
 
 </body>
 
